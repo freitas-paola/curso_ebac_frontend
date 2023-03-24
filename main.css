@@ -28,7 +28,7 @@ nav li a{
   margin-left: 16px
 }
 
-.sports-section, .economy-section {
+.sports-section, .economy-section, .technology-section, .entertainment-section {
   padding: 16px
 }
 
@@ -40,7 +40,15 @@ nav li a{
   background-color: #fff9db;
 }
 
-.sports-container, .economy-container {
+.technology-section{
+  background-color: #e7f5ff;
+}
+
+.entertainment-section {
+  background-color: #f8f0fc;
+}
+
+.sports-container, .economy-container, .technology-container, .entertainment-container {
 display: flex;
 flex-wrap: wrap;
 justify-content: space-between;
@@ -51,7 +59,7 @@ article {
   width: 30%
 }
 
-#sports, #economy {
+#sports, #economy, #technology, #entertainment {
   font-size: 36px;
   color: #212529;
   margin-bottom: 16px;
@@ -78,12 +86,13 @@ article img {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.sports-button, .economy-button {
+.sports-button, .economy-button, .technology-button, .entertainment-button {
   display: inline-block;
   text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 600;
   margin-top: 6px;
+  margin-bottom: 16px;
   padding: 8px;
   border-radius: 20px;
   color: #f8f9fa;
@@ -96,4 +105,12 @@ background-color: #2f9e44;
 
 .economy-button {
 background-color:#fab005 ;
+}
+
+.technology-button{
+background-color: #1864ab;
+}
+
+.entertainment-button {
+background-color: #862e9c;
 }
