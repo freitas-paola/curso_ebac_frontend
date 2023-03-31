@@ -1,17 +1,19 @@
-$("form").on("submit", function (e) {
-  e.preventDefault();
+$(document).ready(function () {
+  $("form").on("submit", function (e) {
+    e.preventDefault();
 
-  const tarefa = $("#input-tarefa").val();
+    const tarefa = $("#input-tarefa").val();
 
-  const novaTarefa = $(
-    `<li><ion-icon name="checkmark"></ion-icon>${tarefa}</li>`
-  );
+    const novaTarefa = $(
+      `<li><ion-icon name="checkmark"></ion-icon>${tarefa}</li>`
+    );
 
-  novaTarefa.appendTo("ul");
+    novaTarefa.appendTo("ul");
 
-  $("#input-tarefa").val("");
+    $("#input-tarefa").val("");
 
-  $(novaTarefa).click(function () {
-    $(this).addClass("item-completo");
+    $(novaTarefa).click(function () {
+      $(this).addClass("item-completo");
+    });
   });
 });
