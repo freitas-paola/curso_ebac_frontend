@@ -2,52 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #e9ecef;
 }
 
 body {
   font-family: "Roboto", sans-serif;
-}
-
-.container {
-  max-width: 640px;
-  width: 100%;
-  margin: 0 auto;
-  text-align: center;
-}
-
-header {
-  margin-top: 20vh;
-}
-
-form {
-  padding: 16px;
-}
-
-form input,
-form button {
-  padding: 8px;
-  font-family: "Roboto", sans-serif;
-  border: 1px solid #343a40;
-  border-radius: 5px;
-}
-
-form button {
-  background-color: #343a40;
-  color: #f8f9fa;
-}
-
-ul {
-  list-style: none;
-}
-
-ul li {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-}
-
-.item-completo {
-  text-decoration: line-through;
 }
