@@ -4,59 +4,87 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>Document</title>
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css
+    "
     />
-    <title>Formulário de Cadastro</title>
-
     <link rel="stylesheet" href="main.css" />
   </head>
   <body>
-    <header>
-      <h1>Formulário de Cadastro</h1>
-    </header>
-    <form>
-      <div>
-        <label class="form-label" for="nome">Nome Completo:</label>
-        <input type="text" id="nome" name="nome" />
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="alert alert-success">
+            Confira as novidades <a href="#"> clicando aqui</a>.
+          </div>
+        </div>
       </div>
-      <div>
-        <label class="form-label" for="email">E-mail:</label>
-        <input type="email" id="email" name="email" />
+      <div class="row">
+        <div class="col-md-8">
+          <h2>Últimas Postagens</h2>
+          <div class="container g-0">
+            <div class="row">
+              <div class="col-md-4 post">
+                <img src="https://via.placeholder.com/180x180" />
+                <h4 class="h5">Título da Postagem</h4>
+                <time>10/08/2022</time>
+                <a class="btn btn-primary btn-sm" href="">Leia Mais</a>
+              </div>
+              <div class="col-md-4 post">
+                <img src="https://via.placeholder.com/180x180" />
+                <h4 class="h5">Título da Postagem</h4>
+                <time>10/08/2022</time>
+                <a class="btn btn-primary btn-sm" href="">Leia Mais</a>
+              </div>
+              <div class="col-md-4 post">
+                <img src="https://via.placeholder.com/180x180" />
+                <h4 class="h5">Título da Postagem</h4>
+                <time>10/08/2022</time>
+                <a class="btn btn-primary btn-sm" href="">Leia Mais</a>
+              </div>
+              <div class="col-md-4 post">
+                <img src="https://via.placeholder.com/180x180" />
+                <h4 class="h5">Título da Postagem</h4>
+                <time>10/08/2022</time>
+                <a class="btn btn-primary btn-sm" href="">Leia Mais</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 d-flex justify-content-end">
+          <div>
+            <h2>Anunciantes</h2>
+            <img src="https://via.placeholder.com/180x180" />
+          </div>
+        </div>
       </div>
-      <div>
-        <label class="form-label" for="telefone">Telefone:</label>
-        <input type="tel" id="telefone" name="telefone" />
+      <div class="row">
+        <div class="col">
+          <h2>Entre em Contato</h2>
+          <form>
+            <label class="form-label" for="nome">Seu nome:</label>
+            <input class="form-control" type="text" id="nome" />
+            <label class="form-label" for="email">Seu email:</label>
+            <input class="form-control" type="email" id="email" />
+            <label class="form-label" for="mensagem">Sua mensagem:</label>
+            <textarea class="form-control" id="mensagem"></textarea>
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="aceito-termos"
+            />
+            <label class="form-check-label" for="aceito-termos"
+              >Li e concordo com os termos do site</label
+            >
+          </form>
+        </div>
       </div>
-      <div>
-        <label class="form-label" for="cpf">CPF:</label>
-        <input type="text" id="cpf" name="cpf" />
-      </div>
-      <div>
-        <label class="form-label" for="endereço">Endereço Completo:</label>
-        <input type="text" id="endereço" name="endereço" />
-      </div>
-      <div>
-        <label class="form-label" for="cep">CEP:</label>
-        <input type="text" id="cep" name="cep" />
-      </div>
-      <button type="submit">Enviar</button>
-    </form>
+    </div>
 
-    <script
-      type="text/javascript"
-      src="https://code.jquery.com/jquery-1.11.0.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
-    ></script>
-    <script src="./js/jquery.mask.min.js"></script>
-    <script src="./js/jquery.validate.min.js"></script>
-    <script src="./js/messages_pt_BR.min.js"></script>
-    <script src="./js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js
+    "></script>
   </body>
 </html>
+
