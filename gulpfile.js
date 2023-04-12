@@ -1,9 +1,9 @@
-const gulp = requires("gulp");
-const sass = requires("gulp-sass")(requires("sass"));
-const sourcemaps = requires("gulp-sourcemaps");
-const uglify = requires("gulp-uglify");
-const obfuscate = requires("gulp-obfuscate");
-const imagemin = requires("gulp-imagemin");
+const gulp = require("gulp");
+const sass = require("gulp-sass")(require("sass"));
+const sourcemaps = require("gulp-sourcemaps");
+const uglify = require("gulp-uglify");
+const obfuscate = require("gulp-obfuscate");
+const imagemin = require("gulp-imagemin");
 
 function compilaSass() {
   return gulp
