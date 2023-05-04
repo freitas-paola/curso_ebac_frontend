@@ -12,12 +12,20 @@ document.addEventListener("DOMContentLoaded", function () {
       return res.json();
     })
     .then(function (json) {
-      avatar.src = json.avatar_url;
-      profileName.innerText = json.name;
-      username.innerText = json.login;
-      repNumber.innerText = json.public_repos;
-      followersNumber.innerText = json.followers;
-      followingNumber.innerText = json.following;
-      linkGitHub.href = json.html_url;
+      if (json.name !== undefined) {
+        avatar.src = json.avatar_url;
+        profileName.innerText = json.name;
+        username.innerText = json.login;
+        repNumber.innerText = json.public_repos;
+        followersNumber.innerText = json.followers;
+        followingNumber.innerText = json.following;
+        linkGitHub.href = json.html_url;
+      } else {
+        throw Error("Usuário não encontrado");
+      }
+    })
+    .catch(function (erro) {
+      console.log(erro);
+      alert("Ocorreu um erro. Tente novamente mais tarde.");
     });
 });
